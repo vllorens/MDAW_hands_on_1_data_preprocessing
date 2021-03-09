@@ -64,6 +64,16 @@ The data that we will use was originally generated for the following publication
 
 In this article, the gut microbiome of 40 healthy adults was profiled via 16S sequencing, and absolute microbial loads per gram of stool were determined via flow cytometry. Here, we will reprocess the data using DADA2 for 20 of those healthy adults. Later in the course, I will also give a seminar on data normalization and why determining microbial loads is important in microbiome research.
 
+To download the data, follow these steps:
+
+1. Go to https://www.ebi.ac.uk/ena/browser/view/PRJEB21504
+2. From the "Submitted FTP" column, select samples SC01 to SC20 (both R1 and R2 fastq files), you will need to go through the first 4 pages
+3. Check that the option "Download files as zip" is active
+4. Click on "Download selected files"
+5. Move the "ena_files.zip" to the `data/` folder from the course and unzip.
+
+![](docs/download_instructions.png)
+
 Before starting, **unzip the `ena_files.zip` file located in the `data/` folder**
 
 ## Check that the files can be located properly
@@ -265,7 +275,8 @@ Now, we can write all the data generated to disk
 
 ```{r write_data, include=T}
 # Write to disk
-write.table(track, file = "output/track_reads.tsv", quote=FALSE)
+dir.create("output")
+write.table(track, file = "output/track_reads.tsv", quote=FALSE, )
 write.table(seqtab.nochim, file = "output/sequence_table_SV.tsv", quote=FALSE)
 write.table(taxHS, file = "output/taxonomy_SV.tsv", quote=FALSE)
 ```

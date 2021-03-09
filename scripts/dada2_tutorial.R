@@ -4,18 +4,34 @@
 # Date: 20/04/2021
 
 #### PART 1: Introduction ####
-# Short pptx presentation about high-throughput 16S amplicon sequencing 
-# and first preprocessing steps (i.e. demultiplexing), 
-# as the DADA2 pipeline starts from demultiplexed files
-# Also differences between OTUs and ASVs
+# Short pptx presentation about the following topics:
+    
+# - High-throughput 16S amplicon sequencing
+# - First preprocessing steps from the raw data: removal of primers, demultiplexing
+# - Differences between OTUs and ASVs
+# - Examples of pipelines to preprocess the data
+
 
 #### PART 2: from the *.fastq files to the OTU table: using the DADA2 pipeline ####
 # This part largely follows the DADA2 tutorial from https://benjjneb.github.io/dada2/tutorial.html
 # But with some modifications adapted to our own testing dataset
 
 # The data that we will use was originally generated for the following publication:
-# We will be working with the data from the study cohort.
-# Go to the data/ folder and uncompress the ena_files.zip file. 
+# Quantitative microbiome profiling links gut community variation to microbial load 
+# (https://www.nature.com/articles/nature24460)
+# In this article, the gut microbiome of 40 healthy adults was profiled via 16S sequencing, 
+# and absolute microbial loads per gram of stool were determined via flow cytometry. 
+# Here, we will reprocess the data using DADA2 for 20 of those healthy adults. 
+# Later in the course, I will also give a seminar on data normalization and 
+# why determining microbial loads is important in microbiome research.
+
+# To download the data, follow these steps:
+    
+# 1. Go to https://www.ebi.ac.uk/ena/browser/view/PRJEB21504
+# 2. From the "Submitted FTP" column, select samples SC01 to SC20 (both R1 and R2 fastq files), you will need to go through the first 4 pages
+# 3. Check that the option "Download files as zip" is active
+# 4. Click on "Download selected files"
+# 5. Move the "ena_files.zip" to the `data/` folder from the course and unzip.
 
 ## 2.1. Package installation and checks
 packages_cran <- c("BiocManager", "ggplot2", "ggpubr")
