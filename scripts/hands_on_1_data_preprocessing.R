@@ -225,7 +225,7 @@ top15 <- names(sort(taxa_sums(ps_genus), decreasing=TRUE))[1:15]
 ps_genus <- transform_sample_counts(ps_genus, function(ASV) ASV/sum(ASV))
 
 # group everything that's not in the top 10 as NA and plot
-tax_table(ps_genus)[!rownames(tax_table(ps_genus)) %in% top10,"Genus"] <- NA
+tax_table(ps_genus)[!rownames(tax_table(ps_genus)) %in% top15,"Genus"] <- NA
 plot_bar(ps_genus, fill="Genus", title = "Top 15 taxa") 
 
 
