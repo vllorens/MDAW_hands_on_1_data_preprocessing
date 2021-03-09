@@ -13,4 +13,4 @@ Here, you will find:
 - a `data/` folder: where so far, you have only the RDP training sets for taxonomic assignment 
 - a `scripts/` folder: contains a script version of the Rmd file
 - a `docs/` folder: contains images needed to compile the Rmd document
-
+- this `README.md` file
