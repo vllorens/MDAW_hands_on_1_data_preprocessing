@@ -1,5 +1,5 @@
 
-Hands-on #1: "from raw data to OTU table"
+# Hands-on #1: "from raw data to OTU table"
 
 This is the repo for the first hands-on tutorial in the Microbiome Data Analyses Workshop (https://mdawo.meetinghand.com/). In this tutorial, I will give a brief introduction on how high throughput 16S data is generated. Then, I will explain how from a single fastq file we can obtain the *demultiplexed* files for the different samples. 
 
