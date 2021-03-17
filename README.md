@@ -9,7 +9,7 @@ Here, you will find:
 
 - `hands_on_from_raw_data_to_otu_table.Rproj`: the R project from within we will follow the tutorial
 - `hands_on_1_data_preprocessing.Rmd`: the tutorial as a R markdown notebook that can be compiled into an html file
-- `hands_on_1_data_preprocessing.html`: the compiled version of this tutorial
+- `hands_on_1_data_preprocessing.html`: the compiled version of this tutorial. It can be viewed either by downloading the file or [here](https://htmlpreview.github.io/?https://github.com/vllorens/MDAW_hands_on_1_data_preprocessing/blob/main/hands_on_1_data_preprocessing.html)
 - a `data/` folder: where so far, you have only the RDP training sets for taxonomic assignment 
 - a `scripts/` folder: contains a script version of the Rmd file
 - a `docs/` folder: contains images needed to compile the Rmd document
